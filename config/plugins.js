@@ -1,4 +1,3 @@
-
 module.exports = ({ env }) => ({
   // ...
   upload: {
@@ -16,5 +15,17 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  slugify: {
+    enabled: true,
+    config: {
+      contentTypes: {
+        events: {
+          field: "Slug",
+          references: "Name",
+        },
+      },
+    },
+  },
+
   // ...
 });
