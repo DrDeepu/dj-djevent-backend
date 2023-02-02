@@ -20,7 +20,7 @@
     "strapi-plugin-slugify": "^2.3.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Deepu Kumar"
   },
   "strapi": {
     "uuid": "fc5ed7b8-bead-46d7-a4e0-5b9b56757bb8"
