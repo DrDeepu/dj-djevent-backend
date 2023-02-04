@@ -2204,7 +2204,7 @@
     lodash "4.17.21"
     yup "0.32.9"
 
-"@strapi/utils@4.6.0":
+"@strapi/utils@4.6.0", "@strapi/utils@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.6.0.tgz#d2deec97fd21f9b802c858aa7a19c5d05850a467"
   integrity sha512-zJfcGVlGLVGTs4Lc5OH+g4vO/+MD5UA6DzMzlSvJ1gsObYpA/a+IMRIMG90nfEKZ9R52LLdaYyGU8ALzxulEmQ==

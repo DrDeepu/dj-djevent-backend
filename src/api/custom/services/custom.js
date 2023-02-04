@@ -1,7 +1,16 @@
-'use strict';
+// 'use strict';
+
+// /**
+//  * custom service
+//  */
+
+// module.exports = () => ({});
+"use strict";
 
 /**
- * custom service
+ * event service
  */
 
-module.exports = () => ({});
+const { createCoreService } = require("@strapi/strapi").factories;
+
+module.exports = createCoreService("api::custom.custom");
