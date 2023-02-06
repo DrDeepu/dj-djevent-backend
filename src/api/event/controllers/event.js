@@ -8,7 +8,6 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::event.event", ({ strapi }) => ({
   async me(ctx) {
-    // ctx.query = { ct: "/api/user/me" };
     const events = await super.find(ctx);
     const user = ctx.state.user;
 
@@ -19,7 +18,6 @@ module.exports = createCoreController("api::event.event", ({ strapi }) => ({
         },
       ]);
     }
-    // return events.data[0].attributes.user;
     const events_with_users = events.data.filter((singlevents) => {
       return singlevents.attributes.user.data;
     });
@@ -28,13 +26,5 @@ module.exports = createCoreController("api::event.event", ({ strapi }) => ({
     });
 
     return user_events;
-
-    // const data = await strapi.services.event.find({ user: user.id });
-
-    // if (!data) {
-    //   return ctx.notFound();
-    // }
-
-    // return sanitize(data, { model: strapi.models.events });
   },
 }));
